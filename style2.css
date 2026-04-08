@@ -1,0 +1,264 @@
+.main-card{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at center, #10254a 0%, #08142b 60%, #050b18 100%);
+    overflow: hidden;
+}
+.star, 
+.diamond{
+    position: absolute;
+}
+.star {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 8px rgba(255,255,255,0.9);
+}
+.diamond {
+    width: 10px;
+    height: 10px;
+    background: white;
+    transform: rotate(45deg);
+    box-shadow: 0 0 8px rgba(255,255,255,0.8);
+}
+.s1 { 
+    top: 12%; 
+    left: 14%; 
+}
+.s2 { 
+    top:18%; 
+    left: 28%;
+}
+.s3 { 
+    top: 72%;
+    left: 18%; 
+}
+.s4 { 
+    top: 78%; 
+    left: 80%; 
+
+}
+.s5 { 
+    top: 22%; 
+    left: 75%;
+}
+.s6 { 
+    top: 62%; 
+    left: 85%;
+}
+.d1 { 
+    top: 30%; 
+    left: 10%; 
+}
+.d2 { 
+    top: 68%; 
+    left: 30%;
+ }
+.d3 { 
+    top: 20%; 
+    left: 62%;
+ }
+
+.d4 { 
+    top: 58%; 
+    left: 72%; 
+}
+
+.moon {
+  position: absolute;
+  right: 10%;
+  top: 25%;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 70% 35%, #08142b 40px, transparent 41px),
+    #f6c44f;
+}
+
+
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 260px;
+    height: 90px;
+    transform: translate(-50%, -50%);
+    border: 5px solid #ff4fd8;
+    border-radius: 50%;
+    box-shadow:
+        0 0 10px rgba(255, 79, 216, 0.8),
+        0 0 25px rgba(168, 85, 247, 0.6);
+    z-index: 1;
+}
+
+.orbit-dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ff7af0;
+    box-shadow: 0 0 10px rgba(255,122,240,0.9);
+    z-index: 1;
+}
+.orbit::before,
+.orbit::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ff66e6;
+    box-shadow: 0 0 10px rgba(255, 102, 230, 0.9);
+}
+.orbit::before {
+    top: -8px;
+    left: 45px;
+}
+.ground-glow {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    top: 61%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 20px;
+    background: radial-gradient(circle, rgba(255, 73, 222, 0.8) 0%, rgba(255, 73, 222, 0.25) 100%, transparent 75%);
+    filter: blur(8px);
+    z-index: 0;
+}
+
+.semi-circle-down {
+    position:relative;
+    width: 50px;
+    height: 25px;
+    top: 130px;
+    left: 35%;
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px; 
+}
+.orbit::after {
+    bottom: -8px;
+    right: 50px;
+}
+.orbit-1 { 
+    top: 42%; 
+    left: 22%; 
+}
+.orbit-2 { 
+    top: 57%; 
+    left: 78%; 
+}
+.orbit-3 { 
+    top: 48%; 
+    left: 18%; 
+}
+.orbit-4 { 
+    top: 38%;
+    left: 76%; 
+}
+
+
+.robot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140px;
+    height: 160px;
+    z-index: 3;
+}
+
+.antenna {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 30px;
+    background: #ff5ad9;
+    border-radius: 10px;
+    box-hadow: 0 0 10px rgba(255, 90, 217, 0.9);
+}
+
+.antenna::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ff75ea;
+    box-shadow:
+        0 0 12px rgba(255, 117, 234, 0.9),
+        0 0 24px rgba(255, 117, 234, 0.5);
+}
+
+
+.body {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    background: #37d7a8;
+    border-radius: 22px;
+    box-shadow:
+        0 0 0 4px rgba(255,255,255,0.05),
+        0 10px 25px rgba(0,0,0,0.25);
+}
+
+
+.eye {
+    position: absolute;
+    top: 38px;
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.eye.left {
+left: 34px;
+}
+
+.eye.right {
+    right: 34px;
+}
+
+.smile {
+    position: absolute;
+    top: 62px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 38px;
+    height: 18px;
+    border: 4px solid transparent;
+    border-bottom: 4px solid #ffffff;
+    border-radius: 0 0 30px 30px;
+}
+
+
+.leg {
+    position: absolute;
+    bottom: 10px;
+    width: 8px;
+    height: 24px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.leg.left {
+      left: 42px;
+}
+
+.leg.right {
+      right: 42px;
+}

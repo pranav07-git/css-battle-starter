@@ -1,0 +1,103 @@
+.main-card{
+    position: absolute;
+    top: 160px;
+    left: 465px;
+    width: 500px;
+    height: 400px;
+    position: relative;
+    background: linear-gradient(
+        160deg,
+        #ff5c7a 50%,
+        #14c8c4 50%
+    );
+    overflow: hidden;
+}
+
+.card {
+    position: absolute;
+    top: 280px;
+    left: 550px;
+    width: 300px;
+    height: 180px;
+    background-color: white;
+    margin: 20px auto;
+}
+.card-2 {
+      width: 120px;
+      height: 80px;
+      background: yellow;
+      position: absolute;
+      top: 350px;
+      left: 770px;
+      width: 250px;
+      height: 180px;
+      transform: translate(-50%, -50%) rotate(11deg);
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(217, 220, 9, 0.3);
+}
+.card-3{
+    position: absolute;
+    width: 200px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 430px;
+    right: 700px;
+
+}
+.card-5{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    top: 388px;
+    right: 630px;
+
+}
+.card-4{
+    position: absolute;
+    width: 100px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 450px;
+    right: 800px;
+
+}
+.circle{
+  position: absolute;
+  top: 315px;
+  right: 820px;
+  height: 40px;
+  width: 40px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+.triangle{
+    position: absolute;
+    top: 350px;
+    right: 700px;
+    width: 0;
+	height: 0;
+	border-left: 65px solid transparent;
+	border-right: 65px solid transparent;
+	border-bottom: 65px solid #20c997;
+}
+.triangle-1{
+    position: absolute;
+    top: 365px;
+    right: 770px;
+    width: 0;
+	height: 0;
+	border-left: 65px solid transparent;
+	border-right: 65px solid transparent;
+	border-bottom: 50px solid #14c8c4;
+}
+.triangle-2{
+    position: absolute;
+    top: 335px;
+    right: 650px;
+    width: 0;
+	height: 0;
+	border-left: 65px solid transparent;
+	border-right: 65px solid transparent;
+	border-bottom: 80px solid #14c8c4;
+}
